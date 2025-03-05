@@ -23,6 +23,7 @@ public class SecurityConfig {
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
             )
             .addFilterAt(new LoginFilter(), UsernamePasswordAuthenticationFilter.class);
+            
 
 
         return http.build();
